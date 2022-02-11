@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners> 
+<listener class-name="com.buffalocart.ExtentReportListener.ExtentReporterNG"/>
+
+</listeners>
+  <test thread-count="5" name="Test">
+     <parameter name ="browser" value="chrome"/>
+    <classes>
+    <class name="com.buffalocart.Scripts.BaseTest"/>
+    <class name="com.buffalocart.Scripts.ForgotPasswordTest"/>
+      <class name="com.buffalocart.Scripts.LoginTest"/>
+      <class name="com.buffalocart.Scripts.HomeTest"/>
+      <class name="com.buffalocart.Scripts.UserManagementTest"/>
+       <class name="com.buffalocart.Scripts.RoleTest"/>
+       <class name="com.buffalocart.Scripts.ProductTest"/>
+       <class name="com.buffalocart.Scripts.ContactTest"/>
+       <class name="com.buffalocart.Scripts.CustomerGroupTest"/>
+       <class name="com.buffalocart.Scripts.SidebarTest"/>
+       
+        <class name="com.buffalocart.Scripts.SignOutTest"/>
+         
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

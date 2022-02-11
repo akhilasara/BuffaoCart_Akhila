@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5"  name="Test"/>
+  <test name="groupingtest">
+  <groups>
+  <run>
+  <include name ="sanity"/>
+  </run>
+  </groups>
+    <classes>
+     <class name="com.buffalocart.Scripts.BaseTest"/>
+    <class name="com.buffalocart.Scripts.LoginTest"/>
+     <class name="com.buffalocart.Scripts.HomeTest"/>
+      <class name="com.buffalocart.Scripts.PurchaseTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
